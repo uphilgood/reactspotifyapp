@@ -2,9 +2,8 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 
-let textColor =  '#808080'
 let defaultStyle = {
-  color: textColor,
+  color: '#808080',
    
 }
 
@@ -52,10 +51,14 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-      <h1 style={{color: textColor}}>Title</h1>
+      <h1 className="App-header" style={defaultStyle}>Title</h1>
+     
       <Aggregate/>
       <Aggregate/>
       <Filter/>
+      <Playlist/>
+      <Playlist/>
+      <Playlist/>
       <Playlist/>
       </div>
     );

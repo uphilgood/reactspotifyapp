@@ -140,7 +140,7 @@ class App extends Component {
       {this.state.serverData.user.name}'s Playlist!
       </h1>
       <PlayListCounter playlists={playlistsToRender}/>
-      <HoursCounter playlists={this.state.serverData.user.playlists}/>
+      <HoursCounter playlists={playlistsToRender}/>
       <Filter onTextChange={text => this.setState({filterString: text})}/>
       {this.state.serverData.user.playlists.filter(playlist => 
       playlist.name
